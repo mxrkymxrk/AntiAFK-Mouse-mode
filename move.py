@@ -19,7 +19,6 @@ def move_mouse():
             print("Paused" if paused else "Resumed")
             time.sleep(1)  # prevent rapid toggling
         if not paused:
-            # Example tiny movement — safe for testing
             pyautogui.move(25, 0)   # move right
             pyautogui.move(-25, 0)  # move left
         time.sleep(300)  # 5 minutes (300 seconds)
